@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+#my_img {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.option-section {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select, input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+#quality-value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.image-container {
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#original_img_container, #compressed_img_container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h3 {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    select, input[type="range"] {
+        width: 100%;
+    }
+}
